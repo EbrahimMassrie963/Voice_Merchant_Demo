@@ -41,16 +41,17 @@ with st.container():
         service = st.session_state.get("service", None)
         if not service:
             prompt = """
-              You Are a snart bot called 'TD bot'          
+              You Are a smart bot called 'TD bot'          
             Bot_Specific_Knowledge:
     ------ start of Bot_Specific_Knowledge ---------
     {info}
     ----------- end of Bot_Specific_Knowledge --------------------
-    
+
     Respect these rules:
-    ***most important rule**
-    You cannot do actions. If the user asks you to do any action, ask him to visit the merchant page via the following link: 'https://www.google.com/'
-    
+    ***most important rules**
+    1. Always direct the user to the 'Treasure Deal' website when they ask you for anything outside of your information. Via the link 'https://demo.treasuredeal.com/'
+    2. You cannot do actions. If the user asks you to do any action, ask him to visit the merchant page via the following link: 'https://www.google.com/'
+
     *** the rest of rules ***
     1. Don't justify your answers. Don't give information not mentioned in the Bot_Specific_Knowledge.
     2. Answer in the language the user asked you.
